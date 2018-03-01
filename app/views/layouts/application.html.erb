@@ -32,7 +32,21 @@
 
     <br class="clear" />
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+            Assembled partisanly in Carlsbad, CA by <a href="https://about.me/brian.kichler/">Brian</a>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
