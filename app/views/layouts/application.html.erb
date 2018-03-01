@@ -11,6 +11,7 @@
   <body>
     <header class="row">
       <div class="col-3">
+        <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
           Vote Dem 
@@ -19,12 +20,13 @@
           <br />
           the crazy
         </div>
+        <% end %>
       </div>
       <div class="col-4 slogan">
         Splurting out right-wing hypocrisy since 2018
       </div>
       <div class="col-5 links">
-        <%= link_to 'Contribute', '#' %>
+        <%= link_to 'Contribute', new_quote_path %>
         <%= link_to 'About', '#' %>
     </header>
 
@@ -40,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-6">
-            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-6 footer-blurb">
             Assembled partisanly in Carlsbad, CA by <a href="https://about.me/brian.kichler/">Brian</a>
