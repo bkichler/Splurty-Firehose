@@ -14,16 +14,16 @@
         <%= link_to root_path, class: 'logo' do %>
         <div class="circle">
           <br />
-          Vote Dem 
+          The internet 
           <br />
-          and stop
+          is just
           <br />
-          the crazy
+          a fad
         </div>
         <% end %>
       </div>
       <div class="col col-sm-4 hidden-xs-down slogan">
-        Splurting out right-wing hypocrisy since 2018
+        Splurting out spectacularly wrong predictions since 2018
       </div>
       <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <!-- Button trigger modal -->
@@ -40,13 +40,13 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">×</span>
             </button>
-            <h4 class="modal-title" id="myModalLabel">Contribute your irritating quote</h4>
+            <h4 class="modal-title" id="myModalLabel">Contribute your utterly wrong prediction</h4>
           </div>
           <%= simple_form_for Quote.new do |f| %>
           <div class="modal-body">
-              <%= f.input :saying, label: "What completely Orwellian nonsense do you want to add?" %>
+              <%= f.input :saying, label: "Find a terrible prediction and input it. Hindsight is 20/20" %>
               <br />
-              <%= f.input :author, label: "Which  pseudo-intellectual said it?" %>
+              <%= f.input :author, label: "Who said it?" %>
               <br />
               <%= f.submit 'Create', class: 'btn btn-danger' %>
             <% end %>
@@ -79,7 +79,7 @@
             <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
           </div>
           <div class="col-12 col-sm-6 footer-blurb">
-            Assembled partisanly in Carlsbad, CA by <a href="https://about.me/brian.kichler/">Brian</a>
+            Assembled present day in Carlsbad, CA by <a href="https://about.me/brian.kichler/">Brian</a>
         </div>
       </div>
     </div>
