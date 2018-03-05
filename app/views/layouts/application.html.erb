@@ -3,7 +3,6 @@
   <head>
     <title>Splurty</title>
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -27,9 +26,12 @@
       </div>
       <div class="col-10 offset-1 offset-sm-0 col-sm-5 links">
         <!-- Button trigger modal -->
-        <%= link_to 'Contribute', '#', data: {toggle: 'modal', target: '#myModal'} %>
+
+        <%= link_to 'Add Quote', '#', data: {toggle: 'modal', target: '#myModal'} %>
+
         &nbsp;&nbsp;
         <%= link_to 'About', about_path %>
+      </div>
     </header>
 
     <!-- Modal -->
